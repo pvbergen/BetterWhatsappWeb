@@ -1,7 +1,7 @@
 Better whatsapp v0.00000000000000000001
-Improving the experience of Whatsapp web since 2016!
+Improving the experience of Whatsapp web since 2016! 
 
-This extension is for the Chrome browser and still in early stages of development.
+This extension is for the Chrome browser and still in early (really early ;) ) stages of development.
 
 Installation
 - Save the files to a folder at random location
@@ -15,7 +15,7 @@ Usage
 The extension is triggered when you access web.whatsapp.com.
 It enables the selection and insertion of emojis using the alt, ctrl and shift keys in combination with the normal keys on your keyboard.
 So, first click on the person or group you want to annoy... chat with.
-Then use the commands below to insert a lot of smileys!! 
+Then use the commands below to insert a lot of smileys!! ;)
 
 Commands:
 - Alt: Open/close the emoji container
@@ -24,3 +24,8 @@ Commands:
 - Alt + Shift + [key]: Inserts the emoji annotated with the key
 - Alt + down arrow or Alt + up arrow: Scroll down or up in the current emoji selection
 - Alt + right arrow key or Alt + left arrow key: Switch to another emoji selection (right or left respectively)
+
+Hotfix:
+If the extension fails (wrong keys, not reacting) just close and open the emoji container. That should fix it :)
+
+_\\//
