@@ -1,0 +1,22 @@
+.emojik, .dropdown-picker li {
+    position: relative;
+}
+
+.bww-character {
+    display: inline;
+    position: absolute;
+    bottom:0px;
+    right:0px;
+    z-index: 1;
+    background-color: #fff;
+    opacity: 0;
+    transform: opacity ease-out 0.5s;
+}
+
+.bww-character.bww-active {
+    opacity: 1;
+} 
+
+.bww-character.bww-hide {
+    opacity: 0;
+} 
