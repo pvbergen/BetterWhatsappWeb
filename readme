@@ -4,7 +4,7 @@ Improving the experience of Whatsapp web since 2016!
 This extension is for the Chrome browser and still in early stages of development.
 
 Installation
-- Unzip to a folder at random location
+- Save the files to a folder at random location
 - Open "chrome://extensions/" in Chrome browser
 - Activate developer mode
 - Hit "Load unpacked extension..."
@@ -24,3 +24,7 @@ Commands:
 - Alt + Shift + [key]: Inserts the emoji annotated with the key
 - Alt + down arrow or Alt + up arrow: Scroll down or up in the current emoji selection
 - Alt + right arrow key or Alt + left arrow key: Switch to another emoji selection (right or left respectively)
+
+Known issues:
+- No or incorrect keys on the emojis: Open and close the emoji section (hitting Alt twice)
+- Skin color selection: Not yet implemented, you have to use your mouse
