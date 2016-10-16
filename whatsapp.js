@@ -61,7 +61,6 @@ EmojiHandler.prototype.addEmoji = function(index)
     if (this.picker) {
          if ($(".dropdown-picker").length > 0) {
              if ($(".dropdown-picker ul li").length > index) {
-                 console.log($($(".dropdown-picker ul li")[index]).find(".emojik"));
                  $($(".dropdown-picker ul li")[index]).click();
                  $($($(".dropdown-picker ul li")[index]).find(".ellipsify")).click();
                  $($($(".dropdown-picker ul li")[index]).find(".emojik")).click();
@@ -136,7 +135,6 @@ function registerHandlers() {
         $(document).off("keydown").on("keydown", function(e) {
             if (e.which == 18) {
                 altKey = true;
-                console.log($(".emoji-panel-body > div"));
                 if (!emojiOpened) {
                     $(".btn-emoji").click();
                     $(".input-container").click();
@@ -196,6 +194,8 @@ function registerHandlers() {
                     container.scrollTop(container.scrollTop()+192);
                     emojiHandler.loadEmojis(0);
                     emojiSet = true;
+                } else if(e.which == 9) {
+                    altKey = false;
                 } else {
                     emojiSet = false;
                 }
@@ -223,6 +223,9 @@ function registerHandlers() {
             }
         });
     
+        window.onblur = function() {
+            altKey = false;
+        }
 }
 
 
