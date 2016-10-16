@@ -95,12 +95,11 @@ EmojiHandler.prototype.addEmoji = function(index)
 var emojiHandler = new EmojiHandler();
 
 var interval = setInterval(function() {
-    var tabs = $('.infinite-list-item');
-    if (tabs.length > 0) {
-        registerHandlers(tabs);
-        clearInterval(interval);
+    var button = $('.btn-emoji');
+    if (button.length > 0) {
+        registerHandlers();
     }
-}, 200);
+}, 500);
 
 
 var altKey = false;
@@ -109,10 +108,8 @@ var shiftKey = false;
 var emojiSet = false;
 var emojiOpened = false;
 var useNumpad = false;
-function registerHandlers(tabs) {
-    tabs.on("click", function(i, tab) {
-        tab = $(tab);
-        
+function registerHandlers() {
+    
         $(".btn-emoji").off("click").on("click", function() {
             if ($(".btn-emoji").hasClass("icon-hide")) {
                 emojiOpened = false;
@@ -225,7 +222,6 @@ function registerHandlers(tabs) {
                 $(".bww-character.bww-shift").removeClass("bww-active");
             }
         });
-    });
     
 }
 
